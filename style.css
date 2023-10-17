@@ -1,0 +1,29 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-image{
+    background-image: url('soup.png');
+    height: 100vh;
+    /* width: 100vw; */
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flippable-circle {
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    top: 0;
+    left: 50%; /* Position it after the main image */
+    transform: translateX(-50%); /* Center it horizontally */
+    transition: transform 0.5s; /* Add a smooth transition for the flip effect */
+}
+
+.flippable-circle:hover {
+    transform: translateX(-50%) rotateY(180deg);
+}
