@@ -1,30 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
 .image-container {
-    position: relative;
     width: 100%;
-    height: 100vh;
-    /* overflow: hidden; */
 }
 
 .main-image{
     background-image: url('soup.png');
     height: 100vh;
-    /* width: 100vw; */
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 10px solid #1E2F3C;
+    margin-top: 0;
 }
 
-.flippable-circle {
+.main-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 36px;
+        color: white;
+        font-family: 'Quicksand';font-size: 3.20rem;
+}
+
+.paragraph-title{
+    /* margin-top: 250px; */
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand';font-size: 70px;
+
+}
+
+.roll {
     position: absolute;
-    width: 25%;
-    height: 50%;
-    top: 0;
-    left: 50%; /* Position it after the main image */
-    transform: translateX(-50%); /* Center it horizontally */
-    transition: transform 0.5s; /* Add a smooth transition for the flip effect */
+    width: 20%;
+    height: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    transition: transform 1.5s; 
 }
 
-.flippable-circle:hover {
-    /* transform: translateX(-50%) rotateY(180deg); */
-    transform: translateX(-50%) rotate(180deg);
+.roll:hover {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.content-paragraph{
+    /* margin-right: 50px; */
+    margin-top: 300px;
+    margin-left: 25vw;
+    text-align: center;
+    color: #515050;
+    font-family: 'Quicksand';font-size: 1.50rem;
+    width: 50vw;
+    /* padding-top: 30px; */
+    padding-bottom: 50px;
+    border-bottom:2px solid #1E2F3C;
+}
+
+.details{
+    width: 13vw;
+}
+
+.Ingredients-Directions-paragraph{
+    margin-top: 100px;
+    margin-left: 25vw;
+    text-align: left;
+    color: #515050;
+    font-family: 'Quicksand';font-size: 1.50rem;
+    width: 50vw;
+    padding-bottom: 50px;
+    border-bottom:2px solid #1E2F3C;
+}
+
+.circle-background{
+    border-radius: 100px;
+    width: 150px;
+    height: 40px;
+    background-color: #FFE4C4;
+    text-align: center;
+}
+
+.Ingredients-lists-design{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.Ingredients-lists-design li::before{
+    content: "-"
+}
+
+#posotion-cookingInfo{
+    /* margin-top: 300px; */
+    margin-left: 20vw;
+}
+
+.Directions-lists-design{
+    list-style-type: none;
+    font-weight: bold;
+}
+.Directions-lists-design li {
+    display: flex;
+    margin: 10px 0;
+    
 }
